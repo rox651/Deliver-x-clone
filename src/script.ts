@@ -49,7 +49,7 @@ function applyElementsAnimationWhenScroll(): void {
    const singles = document.querySelectorAll<HTMLElement>(".scale-up-animation");
    const singlesNoScroll = document.querySelectorAll<HTMLElement>(".scale-up-animation-no-scroll");
 
-   const animationConfigs = {
+   const animationConfig = {
       autoAlpha: 0,
       y: 20,
       scale: 0.98,
@@ -61,14 +61,14 @@ function applyElementsAnimationWhenScroll(): void {
 
    singlesNoScroll.forEach(el => {
       gsap.from(el, {
-         ...animationConfigs,
-         stagger: 0.12,
+         animationConfig,
       });
    });
 
    singles.forEach(el => {
       gsap.from(el, {
-         ...animationConfigs,
+         ...animationConfig,
+         stagger: 1,
          scrollTrigger: {
             trigger: el,
             start: "top 60%",

@@ -1207,3 +1207,118 @@ img {
 
 
 }
+
+.footer {
+  background: #fff;
+  padding-top: 100px;
+  padding-bottom: 60px;
+
+  &__top {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 24px;
+    align-items: center;
+
+    @media (width <=991px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+
+  }
+
+  
+
+  &__top--description {
+    grid-column: 1 / -1;
+    max-width: 540px;
+  }
+
+  &__downloads {
+    display: flex;
+    gap: 16px;
+    justify-self: end;
+
+    @media (width <=991px) {
+      justify-self: start;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    &__button {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 22px;
+      border-radius: 12px;
+      background: $primary-color;
+      color: #fff;
+      text-decoration: none;
+
+      &--icon { width: 20px; height: 20px; }
+      &--text { font-weight: 700; }
+
+      @media (width <=991px) {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
+
+  &__divider {
+    height: 1px;
+    background: #eee;
+    margin: 40px 0 60px;
+  }
+
+  &__middle {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    gap: 40px;
+
+    @media (width <=991px) { grid-template-columns: 1fr 1fr; }
+  }
+
+  &__menu, &__utilities {
+    &--title { display: block; margin-bottom: 20px; color: $black-color; font-weight: 700; }
+
+    &__list { list-style: none; display: grid; gap: 14px; }
+    &__list--link { color: $black-color; text-decoration: none; font-size: 18px;
+    @media (width <=767px) {
+      font-size: 16px;
+    }
+    }
+  }
+
+  &__locations {
+    &--title { display: block; margin-bottom: 20px; color: $black-color; font-weight: 700; }
+    &__list { list-style: none; display: grid; gap: 16px; grid-template-columns: repeat(2, minmax(0,1fr)); @media (width <=767px) { grid-template-columns: repeat(1, minmax(0,1fr)); } }
+    &__list--item { display: flex; align-items: center; gap: 12px; }
+    &__list--icon { width: 56px; height: 56px; border-radius: 12px; background: $grey-light-color; }
+    &__list--name { color: $black-color; font-weight: 600; }
+
+    @media (width <=991px) { grid-column: 1 / -1; }
+  }
+
+  &__bottom {
+    margin-top: 60px;
+    padding-top: 24px;
+    border-top: 1px solid #eee;
+    text-align: center;
+
+    @media (width <=767px) {
+      font-size: 16px;
+    }
+    &--copyright { margin-bottom: 10px; }
+    &--credit { color: $grey-color; }
+    &--link { color: $primary-color; text-decoration: none; font-weight: 500;
+   
+    }
+  }
+}
