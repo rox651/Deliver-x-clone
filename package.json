@@ -1,0 +1,17 @@
+{
+  "name": "automatedpros-prueba-tecnica",
+  "private": true,
+  "scripts": {
+    "sass": "bunx sass src/styles.scss dist/styles.css --watch",
+    "lint": "biome lint --write",
+    "format": "biome format --write"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.4",
+    "@types/bun": "latest",
+    "sass": "^1.93.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}

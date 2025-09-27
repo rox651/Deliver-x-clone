@@ -1,0 +1,33 @@
+$primary-color: #FF5634;
+$grey-color: #656565;
+$grey-light-color: #fafafa;
+
+@use './fonts';
+
+
+body {
+  color: $grey-color;
+  font-family: Metropolis, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.667em;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+}
+
+
+.principal-button {
+  padding: 26px 38px;
+  font-weight: 700;
+  line-height: 1.111em;
+  text-decoration: none;
+  text-align: center;
+  transition: color .3s, background-color;
+  border-radius: 16px;
+}
