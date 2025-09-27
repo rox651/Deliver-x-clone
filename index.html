@@ -21,6 +21,100 @@
    </head>
 
    <body>
+      <header class="header">
+         <div class="inner-container header__inner">
+            <a class="header__brand" href="#">
+               <img
+                  src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/6216c3e8db8e185b2e172d35_logo-deliver-template.svg"
+                  alt="Deliver X Webflow Template - Logo"
+                  class="header__brand--logo"
+               />
+            </a>
+
+            <nav class="header__nav" aria-label="Primary">
+               <ul class="header__nav__list">
+                  <li class="header__nav__list--item">
+                     <a class="header__nav__list--link is-active" href="#">Home</a>
+                  </li>
+                  <li class="header__nav__list--item">
+                     <a class="header__nav__list--link" href="#">About</a>
+                  </li>
+                  <li class="header__nav__list--item">
+                     <a class="header__nav__list--link" href="#">Pricing</a>
+                  </li>
+                  <li class="header__nav__list--item header__nav__list--submenu">
+                     <button class="header__nav__list--trigger" type="button" aria-expanded="false">
+                        Pages
+                     </button>
+                     <ul class="header__nav__submenu" hidden>
+                        <li class="header__nav__submenu--item">
+                           <a class="header__nav__submenu--link" href="#">Company</a>
+                        </li>
+                        <li class="header__nav__submenu--item">
+                           <a class="header__nav__submenu--link" href="#">Blog</a>
+                        </li>
+                        <li class="header__nav__submenu--item">
+                           <a class="header__nav__submenu--link" href="#">Careers</a>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </nav>
+
+            <div class="header__actions">
+               <a class="header__actions--cart" href="#">Cart(0)</a>
+               <a class="header__actions--download principal-button white" href="#">Download app</a>
+               <a class="header__actions--register principal-button" href="#">Register</a>
+            </div>
+
+            <button
+               class="header__toggle"
+               type="button"
+               aria-label="Open menu"
+               aria-controls="drawer"
+               aria-expanded="false"
+            >
+               <span class="header__toggle--bar"></span>
+               <span class="header__toggle--bar"></span>
+               <span class="header__toggle--bar"></span>
+            </button>
+         </div>
+
+         <div class="header__drawer" id="drawer" aria-hidden="true" hidden>
+            <nav class="header__drawer__nav" aria-label="Mobile">
+               <ul class="header__drawer__nav__list">
+                  <li class="header__drawer__nav__list--item">
+                     <a class="header__drawer__nav__list--link" href="#">Home</a>
+                  </li>
+                  <li class="header__drawer__nav__list--item">
+                     <a class="header__drawer__nav__list--link is-active" href="#">About</a>
+                  </li>
+                  <li class="header__drawer__nav__list--item">
+                     <a class="header__drawer__nav__list--link" href="#">Pricing</a>
+                  </li>
+                  <li class="header__drawer__nav__list--item">
+                     <details class="header__drawer__submenu">
+                        <summary class="header__drawer__submenu--summary">Pages</summary>
+                        <ul class="header__drawer__submenu__list">
+                           <li class="header__drawer__submenu__list--item">
+                              <a class="header__drawer__submenu__list--link" href="#">Company</a>
+                           </li>
+                           <li class="header__drawer__submenu__list--item">
+                              <a class="header__drawer__submenu__list--link" href="#">Blog</a>
+                           </li>
+                           <li class="header__drawer__submenu__list--item">
+                              <a class="header__drawer__submenu__list--link" href="#">Careers</a>
+                           </li>
+                        </ul>
+                     </details>
+                  </li>
+               </ul>
+            </nav>
+            <div class="header__drawer__cta">
+               <a class="principal-button header__drawer__cta--button" href="#">Get started</a>
+            </div>
+         </div>
+      </header>
       <main class="hero">
          <div class="inner-container">
             <section class="hero__about">
@@ -207,26 +301,38 @@
                </p>
             </header>
             <div class="partners__items">
-               <article class="partners__item">
-                  <img class="partners__item--img" src="" alt="Customers" />
-                  <h3 class="partners__item--title">Customers</h3>
-                  <p class="partners__item--paragraph">
+               <article class="partners__items__item">
+                  <img
+                     class="partners__items__item--img"
+                     src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/62017b070212f9403ca3a97f_image-1-partners-delivery-template.svg"
+                     alt="Customers - Deliver X Webflow Template"
+                  />
+                  <h3 class="partners__items__item--title">Customers</h3>
+                  <p class="partners__items__item--paragraph">
                      Lorem ipsum dolor sit amet consectetur adipiscing elit mattis sit phasellus
                      mollis sit aliquam sit nullam.
                   </p>
                </article>
-               <article class="partners__item">
-                  <img class="partners__item--img" src="" alt="Restaurants" />
-                  <h3 class="partners__item--title">Restaurants</h3>
-                  <p class="partners__item--paragraph">
+               <article class="partners__items__item">
+                  <img
+                     class="partners__items__item--img"
+                     src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/62017b07238dadda77c03341_image-2-partners-delivery-template.svg"
+                     alt="Restaurants - Deliver X Webflow Template"
+                  />
+                  <h3 class="partners__items__item--title">Restaurants</h3>
+                  <p class="partners__items__item--paragraph">
                      Lorem ipsum dolor sit amet consectetur adipiscing elit mattis sit phasellus
                      mollis sit aliquam sit nullam.
                   </p>
                </article>
-               <article class="partners__item">
-                  <img class="partners__item--img" src="" alt="Riders" />
-                  <h3 class="partners__item--title">Riders</h3>
-                  <p class="partners__item--paragraph">
+               <article class="partners__items__item">
+                  <img
+                     class="partners__items__item--img"
+                     src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/62017b075b917b7d28e88cc8_image-3-partners-delivery-template.svg"
+                     alt="Riders - Deliver X Webflow Template"
+                  />
+                  <h3 class="partners__items__item--title">Riders</h3>
+                  <p class="partners__items__item--paragraph">
                      Lorem ipsum dolor sit amet consectetur adipiscing elit mattis sit phasellus
                      mollis sit aliquam sit nullam.
                   </p>
@@ -242,64 +348,78 @@
                <h2 class="news__header--title">See what the press says about Deliver X</h2>
             </header>
 
-            <div class="news__list">
-               <article class="news__item">
-                  <div class="news__item__head">
-                     <img class="news__item__head--icon" src="" alt="Company" />
-                     <span class="news__item__head--category">company</span>
-                  </div>
-                  <h3 class="news__item--title">
+            <div class="news__items">
+               <article class="news__items__item">
+                  <img
+                     class="news__items__item--icon"
+                     src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/62017fab386a9117726aad8f_image-1-logo-press-delivery-template.svg"
+                     loading="eager"
+                     alt="What The Press Says About Our Company - Deliver X Webflow Template"
+                     class="image"
+                  />
+                  <h3 class="news__items__item--title">
                      Deliver X raises $26M in series B funding for growth
                   </h3>
-                  <div class="news__item__footer">
-                     <a class="news__item__footer--link" href="#">Read more</a>
-                     <time class="news__item__footer--date" datetime="2023-01-22"
+                  <div class="news__items__item__footer">
+                     <a class="news__items__item__footer--link" href="#">Read more</a>
+                     <time class="news__items__item__footer--date" datetime="2023-01-22"
                         >January 22, 2023</time
                      >
                   </div>
                </article>
 
-               <article class="news__item">
-                  <div class="news__item__head">
-                     <img class="news__item__head--icon" src="" alt="Company" />
-                     <span class="news__item__head--category">company</span>
-                  </div>
-                  <h3 class="news__item--title">
+               <article class="news__items__item">
+                  <img
+                     class="news__items__item--icon"
+                     src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/62017fac4a9181ff3e5b1fb1_image-3-logo-press-delivery-template.svg"
+                     loading="eager"
+                     alt="What The Press Says About Our Company - Deliver X Webflow Template"
+                     class="image"
+                  />
+                  <h3 class="news__items__item--title">
                      Deliver X claims to be the #1 player in the delivery industry
                   </h3>
-                  <div class="news__item__footer">
-                     <a class="news__item__footer--link" href="#">Read more</a>
-                     <time class="news__item__footer--date" datetime="2022-11-15"
+                  <div class="news__items__item__footer">
+                     <a class="news__items__item__footer--link" href="#">Read more</a>
+                     <time class="news__items__item__footer--date" datetime="2022-11-15"
                         >Nov 15, 2022</time
                      >
                   </div>
                </article>
 
-               <article class="news__item">
-                  <div class="news__item__head">
-                     <img class="news__item__head--icon" src="" alt="Company" />
-                     <span class="news__item__head--category">company</span>
-                  </div>
-                  <h3 class="news__item--title">Introducing curbside ordering with Deliver X</h3>
-                  <div class="news__item__footer">
-                     <a class="news__item__footer--link" href="#">Read more</a>
-                     <time class="news__item__footer--date" datetime="2022-09-18"
+               <article class="news__items__item">
+                  <img
+                     class="news__items__item--icon"
+                     src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/62017facf5a81a3025f830c1_image-2-logo-press-delivery-template.svg"
+                     loading="eager"
+                     alt="What The Press Says About Our Company - Deliver X Webflow Template"
+                     class="image"
+                  />
+                  <h3 class="news__items__item--title">
+                     Introducing curbside ordering with Deliver X
+                  </h3>
+                  <div class="news__items__item__footer">
+                     <a class="news__items__item__footer--link" href="#">Read more</a>
+                     <time class="news__items__item__footer--date" datetime="2022-09-18"
                         >Sep 18, 2022</time
                      >
                   </div>
                </article>
 
-               <article class="news__item">
-                  <div class="news__item__head">
-                     <img class="news__item__head--icon" src="" alt="Company" />
-                     <span class="news__item__head--category">company</span>
-                  </div>
-                  <h3 class="news__item--title">
+               <article class="news__items__item">
+                  <img
+                     class="news__items__item--icon"
+                     src="https://cdn.prod.website-files.com/61fd4a65725a5325e9bb25c2/62017fab7168b306f912ea93_image-4-logo-press-delivery-template.svg"
+                     loading="eager"
+                     alt="What The Press Says About Our Company - Deliver X Webflow Template"
+                     class="image"
+                  />
+                  <h3 class="news__items__item--title">
                      Introducing the Square POS integration with Deliver X
                   </h3>
-                  <div class="news__item__footer">
-                     <a class="news__item__footer--link" href="#">Read more</a>
-                     <time class="news__item__footer--date" datetime="2022-03-12"
+                  <div class="news__items__item__footer">
+                     <a class="news__items__item__footer--link" href="#">Read more</a>
+                     <time class="news__items__item__footer--date" datetime="2022-03-12"
                         >Mar 12, 2022</time
                      >
                   </div>

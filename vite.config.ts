@@ -2,16 +2,16 @@ import { defineConfig } from "vite";
 import path from "path";
 
 export default defineConfig({
-   resolve: {
-      alias: {
-         "@": path.resolve(__dirname, "src"),
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+    },
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@use "@/_fonts.scss" as *;\n',
       },
-   },
-   css: {
-      preprocessorOptions: {
-         scss: {
-            additionalData: '@use "@/_fonts.scss" as *;\n',
-         },
-      },
-   },
+    },
+  },
 });
